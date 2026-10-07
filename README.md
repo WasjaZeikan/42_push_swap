@@ -184,7 +184,7 @@ The adaptive strategy uses the following thresholds:
 | Disorder        | Selected strategy | Target complexity                         |
 | --------------- | ----------------- | ----------------------------------------- |
 | (D < 0.2)       | Simple            | (O(n&#x00b2;))                            |
-| (0.2 < D < 0.5) | Medium            | (O(n&radic;n)), subject to implementation |
+| (0.2 < D < 0.5) | Medium            | (O(n&radic;n))							  |
 | (D > 0.5)       | Complex           | (O(nlog n))                               |
 
 The thresholds are configurable through `QUADRATIC_THRESHOLD` and `CHUNK_BASED_THRESHOLD`.
@@ -332,4 +332,4 @@ Their assistance included:
 * Discussing command-line parsing for sorting modes and benchmark options.
 * Helping structure the project documentation and explain the selected algorithms.
 
-The AI-generated explanations and code suggestions were used as development guidance. The final implementation, testing, validation, and understanding of the submitted code remain the responsibility of the project author.
+The AI-generated explanations and code suggestions were used as development guidance. The final implementation, testing, validation, and understanding of the submitted code remain the responsibility of the project authors.
