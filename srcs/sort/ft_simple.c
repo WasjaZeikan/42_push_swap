@@ -6,7 +6,7 @@
 /*   By: vzeikan <vzeikan@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 18:40:14 by vzeikan           #+#    #+#             */
-/*   Updated: 2026/10/01 15:39:55 by vzeikan          ###   ########.fr       */
+/*   Updated: 2026/10/07 19:19:52 by vzeikan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static void	rotate_to_position(t_stack *stack, int pos)
 {
 	int	mid;
 
-	mid = stack->size >> 1;
+	mid = stack->size / 2;
 	if (pos < mid)
 	{
 		while (pos > 0)

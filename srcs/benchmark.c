@@ -6,7 +6,7 @@
 /*   By: vzeikan <vzeikan@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 23:34:16 by vzeikan           #+#    #+#             */
-/*   Updated: 2026/10/01 15:47:21 by vzeikan          ###   ########.fr       */
+/*   Updated: 2026/10/07 19:30:54 by vzeikan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ static void	add_complexity(t_buffer *buf, float disorder, t_mode mode)
 		comp = LOGARITHMIC;
 	else if (disorder < QUADRATIC_THRESHOLD)
 		comp = QUADRATIC;
-	else if (disorder <= CHUNK_BASED_THRESHOLD)
+	else if (disorder < CHUNK_BASED_THRESHOLD)
 		comp = CHUNK_BASED;
 	else
 		comp = LOGARITHMIC;

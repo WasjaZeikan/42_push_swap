@@ -6,7 +6,7 @@
 /*   By: vzeikan <vzeikan@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 14:50:07 by vzeikan           #+#    #+#             */
-/*   Updated: 2026/10/07 13:04:42 by vzeikan          ###   ########.fr       */
+/*   Updated: 2026/10/07 19:33:53 by vzeikan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdint.h>
 # include <unistd.h>
 # include <stdbool.h>
+
 struct	s_app;
 
 typedef struct s_node
