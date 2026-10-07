@@ -6,7 +6,7 @@
 /*   By: vzeikan <vzeikan@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 14:54:12 by vzeikan           #+#    #+#             */
-/*   Updated: 2026/09/30 20:59:01 by vzeikan          ###   ########.fr       */
+/*   Updated: 2026/10/07 13:06:48 by vzeikan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ static bool	handle_options(int *argc, char ***argv, t_options *opts)
 	opts->benchmark = false;
 	has_mode = false;
 	i = 1;
-	while (i < *argc && (*argv)[i][0] == '-')
+	while (i < *argc && ((*argv)[i][0] == '-' && (*argv)[i][1] == '-'))
 	{
 		if (arg_equal((*argv)[i], "--bench"))
 			opts->benchmark = true;
